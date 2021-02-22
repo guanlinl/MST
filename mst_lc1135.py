@@ -1,9 +1,9 @@
 class Solution:
     def minimumCost(self, N: int, connections: List[List[int]]) -> int:
-        parents = [-1 for _ in range(N+1)] # -1 means itself is the source of this subset/pool
+        parents = [-1 for _ in range(N+1)] # -1 means itself is the source of the subset/pool
         total_costs = 0
 
-		# total number of sources (subsets) is N at beginning, every node is disjoint
+	# total number of sources (subsets) is N at beginning, every node is disjoint
         num_of_sources = N
 
         # sort connections based on costs
